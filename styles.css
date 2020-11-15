@@ -1,0 +1,164 @@
+body {
+  
+  overflow: hidden;
+  
+  margin: 0;
+  background-color: black;
+}
+html {
+  scroll-behavior: smooth;
+}
+h1 {
+  font-weight: 300;
+  font-size: 2.7rem;
+}
+h2 {
+  font-size: 1.8rem;
+}
+h3{
+  font-weight: 300;
+}
+p{
+  font-size: 1.2rem;
+   font-family: "Crimson Text", serif;
+}
+
+.frontPage {
+  
+  transition: 1s;
+  height: 100%;
+  height: 100vh;
+  background-image: url(https://mocah.org/uploads/posts/4600429-forest-wild-wilderness-trees-landscape-stream.jpg);
+  background-size: cover;
+}
+header {
+  width: 100vw;
+  top: 0;
+  position: sticky;
+  font-family: "Josefin Sans", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  color: white;
+  padding: 0.4rem;
+  
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+header a {
+  text-decoration: none;
+  font-size: 22px;
+  color: white;
+}
+header a:hover {
+  position: relative;
+  bottom: 0.2rem;
+}
+.text {
+  transition: 1s;
+  display: grid;
+  grid-template-columns: 50px 50px auto;
+  grid-template-rows: 50px 45px 50px;
+  width: 20px;
+  top: 15vh;
+  left: 30vw;
+  position: relative;
+  color: white;
+  font-size: 60px;
+  
+}
+.text1 {
+  font-family: "Crimson Text", serif;
+}
+.text2 {
+  grid-column: 2;
+  grid-row: 2;
+  font-family: "Fredericka the Great", cursive;
+  position: relative;
+}
+.text3 {
+  grid-column: 3;
+  grid-row: 3;
+  position: relative;
+  font-family: "Parisienne", cursive;
+}
+.scrollButton {
+  transition: 1s;
+  display: flex;
+  justify-content: center;
+  border-radius: 7rem;
+  background-color: rgba(0, 0, 0, 0.9);
+  width: 70px;
+  position: relative;
+  left: 50%;
+  top: 42vh;
+}
+.scrollButton a {
+  
+  color: white;
+  font-size: 30px;
+  text-decoration: none;
+}
+.scrollButton:hover {
+  position: relative;
+  top: 43vh;
+}
+.close{
+  transform: scale(1, -1);
+}
+
+main {
+  width: 100vw;
+  height: 80vh;
+}
+.main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.infoBox {
+  position: relative;
+  top: 1.5rem;
+  height: 32rem;
+  width: 23rem;
+  background-size: cover;
+  color: white;
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: 10rem auto auto;
+}
+.infoBox1 {
+  background-image: url(https://images.unsplash.com/photo-1507041957456-9c397ce39c97?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1868&q=80://images.unsplash.com/photo-1477322524744-0eece9e79640?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1911&q=80://p0.pxfuel.com/preview/675/731/591/forest-lake-the-stage-reflections.jpg);
+}
+.infoBox2 {
+  background-image: url(https://images.unsplash.com/photo-1486162928267-e6274cb3106f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80);
+}
+.infoBox3 {
+  background-image: url(https://images.unsplash.com/photo-1508433203421-4951509ee8f0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=633&q=80);
+}
+.infoBox h2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 300;
+  font-family: "Josefin Sans", sans-serif;
+  background-color: rgba(0, 0, 0, 0.5);
+  grid-row: 1;
+  color: white;
+}
+.infoBox p{
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.flexmiddle{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer{
+  margin-top: 10rem;
+  height: 10rem;
+  background-color: rgba(48, 100, 46, 0.5);  
+}
+
+
