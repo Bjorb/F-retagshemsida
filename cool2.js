@@ -1,6 +1,6 @@
 function openNav() {
   document.getElementById('frontPage').style.height = '8.5rem' 
-  document.getElementById('text').style.top = '-60rem'
+  document.getElementById('abouttitel').style.top = '-60rem'
   document.getElementById('open').style.display = "block"
   document.getElementById('close').style.display = "none"
 }
@@ -8,8 +8,8 @@ function openNav() {
 
 function closeNav() {
   document.getElementById('frontPage').style.height = '100vh'
-  document.getElementById('text').style.top = '15vh'
-  document.getElementById('open').style.top = "none"
+  document.getElementById('abouttitel').style.top = '20vh'
+  document.getElementById('open').style.top = 'none'
   document.getElementById('close').style.display = "block"
 }
 

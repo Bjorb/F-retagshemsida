@@ -1,51 +1,65 @@
 body {
   
-  overflow: hidden;
-  
+  overflow-x: hidden;
   margin: 0;
+  background-color: black;
+}
+.bodystore{
   background-color: black;
 }
 html {
   scroll-behavior: smooth;
 }
 h1 {
+  color: white;
+  font-family: "Parisienne", cursive;
   font-weight: 300;
-  font-size: 2.7rem;
+  font-size: 3rem;
 }
 h2 {
+  font-family: "Josefin Sans", sans-serif;
+  color: white;
   font-size: 1.8rem;
 }
-h3{
+h3 {
   font-weight: 300;
 }
-p{
+p {
+  color: white;
   font-size: 1.2rem;
-   font-family: "Crimson Text", serif;
+  font-family: "Crimson Text", serif;
 }
 
 .frontPage {
-  
-  transition: 1s;
   height: 100%;
   height: 100vh;
+  transition: 1s;
+ 
   background-image: url(https://mocah.org/uploads/posts/4600429-forest-wild-wilderness-trees-landscape-stream.jpg);
   background-size: cover;
 }
+.frontPage2 {
+  background-image: url(https://images.unsplash.com/photo-1511497584788-876760111969?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2089&q=80);
+  background-size: cover;
+}
+.frontPage3 {
+  background-image: url(https://images.unsplash.com/photo-1503785640985-f62e3aeee448?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1653&q=80);
+  background-size: cover;
+}
+
 header {
   width: 100vw;
-  top: 0;
-  position: sticky;
   font-family: "Josefin Sans", sans-serif;
   display: flex;
   align-items: center;
   justify-content: space-around;
   color: white;
   padding: 0.4rem;
-  
   background-color: rgba(0, 0, 0, 0.5);
 }
 
 header a {
+  padding: 0;
   text-decoration: none;
   font-size: 22px;
   color: white;
@@ -54,18 +68,26 @@ header a:hover {
   position: relative;
   bottom: 0.2rem;
 }
+.header2 {
+  background-image: url(https://mocah.org/uploads/posts/4600429-forest-wild-wilderness-trees-landscape-stream.jpg);
+  background-size: cover;
+}
+
+header p{
+  grid-row: 2;
+}
+
 .text {
   transition: 1s;
   display: grid;
   grid-template-columns: 50px 50px auto;
-  grid-template-rows: 50px 45px 50px;
+  grid-template-rows: 5rem 4rem 5rem;
   width: 20px;
   top: 15vh;
   left: 30vw;
   position: relative;
   color: white;
-  font-size: 60px;
-  
+  font-size:5rem;
 }
 .text1 {
   font-family: "Crimson Text", serif;
@@ -83,11 +105,11 @@ header a:hover {
   font-family: "Parisienne", cursive;
 }
 .scrollButton {
-  transition: 1s;
+  transition: 2s;
   display: flex;
   justify-content: center;
   border-radius: 7rem;
-  background-color: rgba(0, 0, 0, 0.9);
+  
   width: 70px;
   position: relative;
   left: 50%;
@@ -101,10 +123,16 @@ header a:hover {
 }
 .scrollButton:hover {
   position: relative;
-  top: 43vh;
+  
+}
+.open{
+  transition: 1s;
+  top:-17rem;
+  position: relative;
+  display: none;
 }
 .close{
-  transform: scale(1, -1);
+  display: inline-block;
 }
 
 main {
@@ -120,11 +148,12 @@ main {
 .infoBox {
   position: relative;
   top: 1.5rem;
-  height: 32rem;
-  width: 23rem;
+  height: 80vh;
+  width: 30rem;
   background-size: cover;
   color: white;
-  display: grid;
+  display: flex;
+  flex-direction: column;
   grid-template-columns: auto;
   grid-template-rows: 10rem auto auto;
 }
@@ -138,27 +167,311 @@ main {
   background-image: url(https://images.unsplash.com/photo-1508433203421-4951509ee8f0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=633&q=80);
 }
 .infoBox h2 {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
   display: flex;
   justify-content: center;
   align-items: center;
   font-weight: 300;
   font-family: "Josefin Sans", sans-serif;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.6);
   grid-row: 1;
   color: white;
 }
-.infoBox p{
-  background-color: rgba(0, 0, 0, 0.5);
+.infoBox p {
+  font-family: "Crimson Text", serif;
+  text-align: center;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  background-color: rgba(0, 0, 0, 0.6);
 }
-.flexmiddle{
+.infoBox a{
+  padding: 5rem;
+  margin-top: 15rem;
+  text-align: center;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 1.5rem;
+  color: white;
+  text-decoration: none;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+.infoBox a:hover{
+ position: relative;
+ bottom: 1rem;
+ text-decoration: underline white;
+}
+
+.abouttitel {
+  
+  
+  font-family: "Crimson Text", serif;
+  transition: 1s;
+  top: 20vh;
+  position: relative;
+  font-size: 7rem;
+  text-align: center;
+}
+.storybox {
+  margin-top: 5rem;
+  display: grid;
+  grid-template-rows: auto auto;
+  grid-template-columns: auto auto;
+  background-color: rgba(255, 247, 247, 0.05);
+}
+.storybox h2 {
+  text-align: center;
+}
+.storybox p {
+  margin: 2rem;
+}
+.s1 {
+  margin-right: 38rem;
+}
+.s2 {
+  margin-left: 38rem;
+}
+.s1 h2 {
+  grid-row: 1;
+  grid-column: 2;
+}
+.s1 img {
+  grid-row-start: 1;
+  grid-row-end: 3;
+  grid-column: 1;
+}
+
+.s1 p {
+  grid-row: 2;
+  grid-column: 2;
+}
+.s2 img {
+  grid-row-start: 1;
+  grid-row-end: 3;
+  grid-column: 2;
+}
+.s2 p {
+  grid-row: 2;
+  grid-column: 1;
+}
+.s2 h2 {
+  grid-row: 1;
+  grid-column: 1;
+}
+.abouttitelstore{
+  position: relative;
+  top:7vh;
+}
+.forestmain{
+  flex-wrap: wrap;
   display: flex;
   justify-content: center;
+}
+.forests{
+  padding: 5rem;
+  margin-top: 5rem;
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto auto;
+  width: 80vw;
+  height: fit-content;
+  background-color: rgba(255, 255, 255, 0.05); ;
+}
+.forests h2{
+  margin-bottom: 0rem;
+  border-bottom: black solid;
+  font-size: 3rem;
+}
+.forests img{
+  margin-top: 0rem;
+  width: 30rem; 
+  padding: 2rem;
+}
+.forests .img1{
+  justify-self: flex-end;
+  grid-column: 1;
+ 
+}
+.forests .img2{
+  grid-column: 2;
+}
+.forests p{
+  text-align: center ;
+  line-height: 2;
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+.forests h2{
+  grid-column-start: 1;
+  grid-column-end: 3;
+  text-align: center;
+} 
+
+.frontpagestore{
+  
+  height: 70vh;
+  background-image: url(https://cdn.pixabay.com/photo/2016/08/16/19/09/forest-1598756_1280.jpg);
+  flex-direction: column;
+  display: flex;
+}
+
+.storeMain{
+  
+  display: flex;
+  justify-content: center;
+  
+}
+.storeTitel{
+  width: 100vw;
+  display: flex;
+  align-items: baseline;
+  border-bottom: rgb(255, 255, 255) solid;
+  
+}
+.storeTitel h2 {
+  
+  margin-left: 8rem;
+  margin-bottom: 0;
+  font-size: 3.5rem;
+  color: rgb(255, 255, 255);
+}
+.storeTitel a{
+  padding: 0;
+  font-family:  "Josefin Sans", sans-serif; ;
+  font-weight: 300;
+  margin-bottom: 0;
+  margin-left: 87rem;
+  
+  font-size: 2rem;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+.storeTitel a:hover{
+  position: relative;
+  bottom: 0.5rem;
+}
+.store{
+  margin-top: 0.5rem;
+  justify-self: center;
+  padding: 5rem;
+  padding-top: 1rem;
+  width: 80vw;
+  height: fit-content;
+  background-color: rgba(255, 255, 255, 0.1);
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: space-between;
+}
+.storeitem{
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
+  display: flex;
+  margin-top: 4rem;
+  background-color: rgba(0, 0, 0, 0.3);
+  padding: 1rem;
 }
+.storeitem img{
+  width: 25rem;
+}
+.storeitem h2{
+  font-size: 2rem;
+  border-bottom: rgb(255, 255, 255) solid;
+  margin-bottom: 0;
+  
+}
+.storeitem p{
+  font-size: 1.5rem;
+  margin-top: 1rem;
+  font-family:  "Josefin Sans", sans-serif; ;
+}
+.addtocart{
+  border-radius: 0.4rem;
+  font-family: "Josefin Sans", sans-serif;
+  display: none;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  color: white;
+  background-color: rgb(56, 128, 56);
+  text-decoration: none;
+  position: absolute;
+  
+}
+.storeitem:hover .addtocart{
+  opacity: 1;
+  display: block;
+}
+.storeitem:hover .addtocart h3{
+  opacity: 1;
+}
+.storeitem:hover :not(.addtocart){
+  opacity: 0.3;
+
+}
+
+
+
+.animate-in {
+  -webkit-animation: fadeIn .5s ease-in;
+  animation: fadeIn .5s ease-in;
+}
+
+.animate-out {
+  -webkit-transition: opacity .5s;
+  transition: opacity .5s;
+  opacity: 0;
+}
+
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 footer{
-  margin-top: 10rem;
-  height: 10rem;
-  background-color: rgba(48, 100, 46, 0.5);  
+  position: relative;
+  margin-top: 10vw;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.05);
 }
 
-
+.socials {
+  display: flex;
+  justify-content: baseline;
+  font-size: 25px;
+}
+.socials i {
+  color: white;
+  margin: 10px;
+}
+.newsletter {
+  display: flex;
+}
+.newsletter p{
+  font-family: "Josefin Sans", sans-serif;
+}
+.newsletter input {
+  border: none;
+  margin: 10px;
+  padding: 2px;
+}
+.newsletter input::placeholder {
+  color: black;
+}
+.spacer{
+  height: 20vh;
+}
