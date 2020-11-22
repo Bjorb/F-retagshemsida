@@ -9,7 +9,7 @@ function openNav() {
 function closeNav() {
   document.getElementById('frontPage').style.height = '100vh'
   document.getElementById('abouttitel').style.top = '20vh'
-  document.getElementById('open').style.top = 'none'
+  document.getElementById('open').style.display = "none"
   document.getElementById('close').style.display = "block"
 }
 
