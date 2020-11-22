@@ -26,7 +26,7 @@ h1 {
 h2 {
   font-family: "Josefin Sans", sans-serif;
   color: white;
-  font-size: 1.8rem;
+  font-weight: 300;
 }
 h3 {
   font-weight: 300;
@@ -42,15 +42,15 @@ p {
   height: 100vh;
   transition: 1s;
  
-  background-image: url(https://mocah.org/uploads/posts/4600429-forest-wild-wilderness-trees-landscape-stream.jpg);
+  background-image: url(img/forest1.jpg);
   background-size: cover;
 }
 .frontPage2 {
-  background-image: url(https://images.unsplash.com/photo-1511497584788-876760111969?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2089&q=80);
+  background-image: url(img/forest2.jpg);
   background-size: cover;
 }
 .frontPage3 {
-  background-image: url(https://images.unsplash.com/photo-1503785640985-f62e3aeee448?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1653&q=80);
+  background-image: url(img/forest3.jpg);
   background-size: cover;
 }
 
@@ -85,10 +85,6 @@ header a:hover {
   position: relative;
   bottom: 0.2rem;
 }
-.header2 {
-  background-image: url(https://mocah.org/uploads/posts/4600429-forest-wild-wilderness-trees-landscape-stream.jpg);
-  background-size: cover;
-}
 
 header p{
   grid-row: 2;
@@ -104,7 +100,7 @@ header p{
   left: 30vw;
   position: relative;
   color: white;
-  font-size:5rem;
+  font-size:4rem;
 }
 .text1 {
   font-family: "Crimson Text", serif;
@@ -184,13 +180,13 @@ main {
   grid-template-rows: 10rem auto auto;
 }
 .infoBox1 {
-  background-image: url(https://images.unsplash.com/photo-1507041957456-9c397ce39c97?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1868&q=80://images.unsplash.com/photo-1477322524744-0eece9e79640?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1911&q=80://p0.pxfuel.com/preview/675/731/591/forest-lake-the-stage-reflections.jpg);
+  background-image: url(img/info1.jpg);
 }
 .infoBox2 {
-  background-image: url(https://images.unsplash.com/photo-1486162928267-e6274cb3106f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80);
+  background-image: url(img/info2.jpg);
 }
 .infoBox3 {
-  background-image: url(https://images.unsplash.com/photo-1508433203421-4951509ee8f0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=633&q=80);
+  background-image: url(img/info3.jpg);
 }
 .infoBox h2 {
   padding-top: 2rem;
@@ -335,7 +331,7 @@ main {
 .frontpagestore{
   
   height: 70vh;
-  background-image: url(https://cdn.pixabay.com/photo/2016/08/16/19/09/forest-1598756_1280.jpg);
+  background-image: url(img/forest6.jpg);
   flex-direction: column;
   display: flex;
 }
@@ -466,6 +462,7 @@ main {
 }
 
 footer{
+  margin-top: 10rem;
   width: 100%;
   height: 200px;
   display: flex;
